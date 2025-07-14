@@ -1,0 +1,12 @@
+file_format: "1"
+id: poached_eggs
+name: Poached Eggs
+type: shield
+url: https://example.com/
+requires: [seeed_xiao]
+features:
+  - keys
+  - studio
+siblings:
+  - poached_eggs_left
+  - poached_eggs_right
