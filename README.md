@@ -2,6 +2,17 @@
 
 ZMK support for the Poached Egg keyboard - a split ortholinear keyboard.
 
+## Keymap Editor Setup
+
+### Option 1: Automatic Layout Parsing (Recommended)
+1. Open [Keymap Editor](https://keymap-editor.nickcoutsos.com/)
+2. Load your repository: `https://github.com/1170026/poached-egg-shield-module`
+3. Go to Settings and enable **"Enable Automatic Layout Parsing"**
+4. The editor will automatically detect the layout from the dtsi file
+
+### Option 2: Manual Layout File
+If automatic parsing doesn't work well, rename `info.json.backup` to `info.json` to use the manual layout definition.
+
 ## Features
 
 - 48-key split keyboard layout (6x4 per side)
@@ -9,21 +20,10 @@ ZMK support for the Poached Egg keyboard - a split ortholinear keyboard.
 - ZMK firmware support
 - Keymap Editor compatibility
 
-## Keymap Editor Support
-
-This repository now includes full Keymap Editor support. You can use the visual editor to customize your keymap:
-
-1. Open [Keymap Editor](https://keymap-editor.nickcoutsos.com/)
-2. Load your keymap from this repository URL:
-   `https://github.com/1170026/poached-egg-shield-module`
-3. The editor will automatically detect the layout and load your current keymap
-4. Make your changes using the visual interface
-5. Download the updated keymap file
-
 ## Files
 
 - `config/poached_eggs.keymap` - Default keymap configuration
-- `config/poached_eggs.json` - Keymap Editor layout definition
+- `config/info.json.backup` - Manual layout definition (backup)
 - `config/poached_eggs.zmk.yml` - ZMK metadata for Keymap Editor
 - `config/boards/shields/poached_eggs/` - Shield definition files
 
